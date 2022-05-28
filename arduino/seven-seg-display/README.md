@@ -4,7 +4,9 @@ This program drives a [7-segment display](https://en.wikipedia.org/wiki/Seven-se
 ## Our display
 The display we have used is [*KingBright's SA56-11EWA*](https://uk.farnell.com/kingbright/sa56-11ewa/display-seven-segment-19-05mm/dp/1142440) ([datasheet](https://www.farnell.com/datasheets/1864136.pdf)). This display is [**low-level-active**](https://en.wikipedia.org/wiki/Logic_level#Active_state), that is, the common connection should be connected to a high level pin and segments are then activated with a low level.
 
-Should your display be *high-level-active* you should remove the logical `NOT` operator (i.e. `!`) on `line 57` of `main.go`.
+Should your display be *high-level-active* you should remove the logical `NOT` operator (i.e. `!`) on `line 57` of `main.go`:
+
+https://github.com/pcolladosoto/go-micro/blob/b803b2abe828a7dfd2d61ac353be56c4c4521b6b/arduino/seven-seg-display/main.go#L57
 
 ## Wiring
 The following table contains the necessary wiring. Note we're using the printed pin names on an Arduino Uno board:
