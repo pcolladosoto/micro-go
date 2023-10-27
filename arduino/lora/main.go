@@ -15,6 +15,9 @@ const (
 
 func main() {
 	radioOpts := arduino.DefaultOpts
+	radioOpts.TxPowerDbm = 13
+	radioOpts.CodingRate = 5
+	radioOpts.SpreadingFactor = 7
 
 	for i := 0; i < START_DELAY; i++ {
 		println("starting in", START_DELAY-i, "seconds...")
