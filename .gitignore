@@ -1,3 +1,6 @@
 # Ignore hidden files except .gitignore itself!
 .*
 !.gitignore
+
+# Ignore datasheets
+*.pdf
